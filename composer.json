@@ -1,6 +1,8 @@
 {
     "name": "michiel/geocoder",
     "description": "Geocoder package for PHP that offers a user friendly interface for Geocoder services (such as Google Maps). The package is framework agnostic, but includes a ServiceProvider for Laravel.",
+    "license": "MIT",
+    "keywords": ["geocoding","geocoder","geocode","google","maps","api","longitude","latitude","location"],
     "authors": [
         {
             "name": "Michiel van der Geest",
