@@ -108,6 +108,13 @@ interface GeocodeParser {
 	public function address();
 
 	/**
+	 * Returns the postcode
+	 *
+	 * @return string
+	 */
+	public function postcode();
+
+	/**
 	 * Returns the latitude coordinate
 	 *
 	 * @return float

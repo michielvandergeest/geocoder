@@ -182,9 +182,19 @@ class GoogleGeocodeParser implements GeocodeParser {
 	 */
 	public function address()
 	{
-
 		return $this->result['formatted_address'];
+	}
 
+	/**
+	 * Returns the postcode
+	 *
+	 * @return string
+	 */
+	public function postcode($type = 'long')
+	{
+		$element = $this->getElementWhereType('postal_code', $this->result['address_components']);
+
+		return $this->getName($element, $type);
 	}
 
 	/**
