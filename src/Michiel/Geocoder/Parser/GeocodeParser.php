@@ -107,4 +107,25 @@ interface GeocodeParser {
 	 */
 	public function address();
 
+	/**
+	 * Returns the latitude coordinate
+	 *
+	 * @return float
+	 */
+	public function lat();
+
+	/**
+	 * Returns the longitude coordinate
+	 *
+	 * @return float
+	 */
+	public function lng();
+
+	/**
+	 * Returns the viewport coordinates
+	 *
+	 * @return array
+	 */
+	public function viewport();
+
 }

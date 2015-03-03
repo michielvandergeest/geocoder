@@ -188,6 +188,41 @@ class GoogleGeocodeParser implements GeocodeParser {
 	}
 
 	/**
+	 * Returns the latitude coordinate
+	 *
+	 * @return float
+	 */
+	public function lat()
+	{
+		return $this->result['geometry']['location']['lat'];
+	}
+
+	/**
+	 * Returns the longitude coordinate
+	 *
+	 * @return float
+	 */
+	public function lng()
+	{
+		return $this->result['geometry']['location']['lng'];
+	}
+
+	/**
+	 * Returns the viewport coordinates
+	 *
+	 * @return array
+	 */
+	public function viewport()
+	{
+		return [
+			'ne_lat' => $this->result['geometry']['viewport']['northeast']['lat'],
+			'ne_lng' => $this->result['geometry']['viewport']['northeast']['lng'],
+			'sw_lat' => $this->result['geometry']['viewport']['southwest']['lat'],
+			'sw_lng' => $this->result['geometry']['viewport']['southwest']['lng'],
+		];
+	}
+
+	/**
 	 * Magic call method to enable selecting the active result, using friendly names such as
 	 * first(), second(), third() etc.
 	 *
