@@ -135,4 +135,10 @@ interface GeocodeParser {
 	 */
 	public function viewport();
 
+	/**
+	 * Returns the place id
+	 *
+	 * @return string
+	 */
+	public function place_id();
 }

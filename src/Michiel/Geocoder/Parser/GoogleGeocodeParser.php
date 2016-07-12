@@ -233,6 +233,16 @@ class GoogleGeocodeParser implements GeocodeParser {
 	}
 
 	/**
+	 * Returns the place id
+	 *
+	 * @return string
+	 */
+	public function place_id()
+	{
+		return $this->result['place_id'];
+	}
+
+	/**
 	 * Magic call method to enable selecting the active result, using friendly names such as
 	 * first(), second(), third() etc.
 	 *
